@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # U.S. Wine Trends (TTB Monthly Report)
 
 This project analyzes U.S. wine production and category trends using monthly data from the Alcohol and Tobacco Tax and Trade Bureau (TTB).
@@ -40,7 +39,7 @@ python3 wine_trends.py
 
 ## Output
 
-![Wine Trends](outputs/wine_trends_2025.png)
+![Wine Trends](Outputs/wine_trends_2025.png)
 
 The script produces a smoothed trend chart saved to:
 
