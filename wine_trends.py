@@ -2,8 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 FILE = "data/Wine_National_Report.xlsx"
-SHEET = "2025"          # keep it simple for now
-SKIPROWS = 7            # works for the top table in your screenshot
+SHEET = "2025"       # Target year from TTB report   
+SKIPROWS = 7         # Align with TTB report header structure   
 
 # Load one year
 df = pd.read_excel(FILE, sheet_name=SHEET, skiprows=SKIPROWS)
@@ -57,8 +57,11 @@ plt.ylabel("Gallons")
 plt.legend()
 plt.tight_layout()
 
+# Observed: production declines through mid-year, then rises sharply in late summer,
+# indicating strong seasonality likely tied to harvest cycles
+
 # Save output for GitHub
-plt.savefig("wine_trends_2025.png", dpi=200)
+plt.savefig("outputs/wine_trends_2025.png", dpi=200)
 plt.show()
 
 print("Saved chart: wine_trends_2025.png")
