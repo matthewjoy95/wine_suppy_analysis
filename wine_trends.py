@@ -5,6 +5,7 @@ FILE = "data/Wine_National_Report.xlsx"
 SHEET = "2025"       # Target year from TTB report   
 SKIPROWS = 7         # Align with TTB report header structure   
 
+
 # Load one year
 df = pd.read_excel(FILE, sheet_name=SHEET, skiprows=SKIPROWS)
 
@@ -56,6 +57,7 @@ plt.xlabel("Month")
 plt.ylabel("Gallons")
 plt.legend()
 plt.tight_layout()
+
 
 # Observed: production declines through mid-year, then rises sharply in late summer,
 # indicating strong seasonality likely tied to harvest cycles
